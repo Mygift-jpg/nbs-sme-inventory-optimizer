@@ -1,3 +1,18 @@
+import os
+import streamlit as st
+
+# IMPORTANT: Railway needs this for port configuration
+import sys
+import subprocess
+
+# Get port from Railway environment variable
+PORT = int(os.environ.get("PORT", 8501))
+
+# If running on Railway, we need to specify the port
+if "RAILWAY_ENVIRONMENT" in os.environ:
+    # This helps Streamlit run correctly on Railway
+    pass
+
 import streamlit as st
 import joblib
 import numpy as np
