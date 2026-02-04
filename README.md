@@ -44,12 +44,12 @@ What makes this project unique:
 
 ## Actual Project Structure
 
-nbs-sme-inventory-optimizer/
-├── app.py                    # Streamlit application (LIVE!)
-├── requirements.txt          # Dependencies for Python 3.13
-├── random_forest_model.joblib # Trained model file
-├── 01_2026_NG_SME_Inventory_Optimizer_NBS_Data.ipynb  # Complete analysis
-└── README.md                 # This file
+nbs-sme-inventory-optimizer
+app.py                    # Streamlit application (LIVE!)
+requirements.txt          # Dependencies for Python 3.13
+random_forest_model.joblib # Trained model file
+01_2026_NG_SME_Inventory_Optimizer_NBS_Data.ipynb  # Complete analysis
+README.md                 # This file
 
 ## How to Run Locally
 # Clone repository
@@ -61,7 +61,7 @@ pip install -r requirements.txt
 # Run the app
 streamlit run app.py
 
-Community & Acknowledgments
+# Community & Acknowledgments
 
 This project survived deployment thanks to:
 
@@ -72,15 +72,15 @@ This project survived deployment thanks to:
 
 Special thanks to everyone who engaged with the #BuildInPublic journey!
 
-About the Author
+# About the Author
 
 Blessing Okagbare – Data Practitioner & Founder, LB EdTech Solutions
 
-This project serves as a real-world case study for the LB EdTech Data Analytics Bootcamp, demonstrating how Nigerian data can solve Nigerian business problems while documenting the REAL journey of deployment struggles and victories.
+# This project serves as a real-world case study for the LB EdTech Data Analytics Bootcamp, demonstrating how Nigerian data can solve Nigerian business problems while documenting the REAL journey of deployment struggles and victories.
 
-License
+# License
 
 MIT License. Data from NBS Nigeria. Educational/portfolio use.
 
 
-"From January vision to January proof – documenting God's faithfulness in code." 🇳🇬
+From January vision to January proof – documenting God's faithfulness in code. 🇳🇬
