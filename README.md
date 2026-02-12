@@ -53,6 +53,7 @@ requirements.txt          # Dependencies for Python 3.13
 random_forest_model.joblib # Trained model file
 
 01_2026_NG_SME_Inventory_Optimizer_NBS_Data.ipynb  # Complete analysis
+
 README.md                 # This file
 
 ## How to Run Locally
