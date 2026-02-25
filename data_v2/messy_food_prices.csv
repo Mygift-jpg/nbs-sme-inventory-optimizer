@@ -1,0 +1,18 @@
+Date,Item,Price_Lagos,Unit,Market_Location,Category
+01-01-2021,Rice (Foreign),24500,50kg Bag,Daleko,Imported
+01/02/2021,Rice (Foreign),25000,50kg Bag,Daleko,Imported
+Mar-21,Rice (Foreign),24800,50kg Bag,Oyingbo,Imported
+01-04-2021,Rice (Foreign),26000,50kg Bag,Mile 12,Imported
+01-05-2021,Yellow Garri,12000,50kg Bag,Mile 12,Local
+01-06-2021,Yellow Garri,,50kg Bag,Oyingbo,Local
+01-07-2021,Beans (Honey),28000,50kg Bag,Mushin,Local
+01-08-2021,Veg Oil (25L),22000,25L Gallon,Daleko,Imported
+01-09-2021,Veg Oil (25L),N23,500,25L Gallon,Daleko,Imported
+...
+01-06-2023,Rice (Foreign),38000,50kg Bag,Daleko,Imported
+01-07-2023,Rice (Foreign),42000,50kg Bag,Oyingbo,Imported
+...
+01-02-2024,Rice (Foreign),70000,50kg Bag,Daleko,Imported
+01-03-2024,Beans (Honey),85000,50kg Bag,Mile 12,Local
+01-06-2024,Rice (Foreign),77000,50kg Bag,Oyingbo,Imported
+01-12-2024,Rice (Foreign),88000,50kg Bag,Daleko,Imported
