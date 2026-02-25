@@ -35,12 +35,6 @@ def load_model():
 
 model = load_model()
 
-if model is not None:
-    st.sidebar.write(f"Model type: {type(model)}")
-    if hasattr(model, 'coef_'):
-        st.sidebar.write(f"Model coefficients: {model.coef_}")
-        st.sidebar.write(f"Model intercept: {model.intercept_}")
-
 # Sidebar for inputs
 st.sidebar.header("📊 Input Parameters")
 st.sidebar.markdown("---")
