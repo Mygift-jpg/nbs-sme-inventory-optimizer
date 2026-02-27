@@ -1,91 +1,92 @@
-# 🇳🇬 NBS Inventory Optimizer for Lagos SMEs
+# 🇳🇬 NBS SME Inventory Optimizer for Lagos SMEs
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live-success)](https://nbs-sme-inventory-optimizer-fhdmjy35iu25mmqx2vkoib.streamlit.app/)
-[![Python](https://img.shields.io/badge/Python-3.13-blue)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.12-blue)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 [![GitHub](https://img.shields.io/badge/Build_In_Public-PROOF2026-green)](#)
 
-**Predict monthly inventory needs using real Nigerian NBS food price data**
+**Predict monthly rice prices for Lagos SMEs using real Nigerian data + FX awareness**
 
-## Live Demo
-**[Try the deployed app here!](https://nbs-sme-inventory-optimizer-fhdmjy35iu25mmqx2vkoib.streamlit.app/)**
+## 🔴 Live Demo
+**[Try the app here!](https://nbs-sme-inventory-optimizer-fhdmjy35iu25mmqx2vkoib.streamlit.app/)**
 
-## 📖 The Story Behind This Project
-*This isn't just code—it's a testimony of God's faithfulness through 3 days of deployment battles, Python version wars, and community-powered breakthroughs. [Read the full journey on LinkedIn](#)*
+## 📖 The Story
+*This project survived 3 weeks of debugging, 1 stubborn model, and multiple "I quit" moments. [Read the full journey on Linkedln - https://www.linkedin.com/in/blessing-okagbare]*
 
-## Business Problem
-Small businesses in Lagos struggle with inventory management—overstocking leads to waste, understocking loses sales. This project provides a data-driven solution using publicly available Nigerian economic data.
+## 🇳🇬 Nigerian Problem
+Lagos rice sellers struggle to know **WHEN to buy**. Prices move with FX, seasons, and market shocks. Most rely on guesswork.
 
-## Nigerian Innovation
-What makes this project unique:
-- **10% accuracy improvement** from adding Nigerian context features (`is_festive`, `is_harvest`)
-- **Real NBS data** (2017-2024)
-- **Business insights in Nigerian Naira** (₦) for real Lagos SMEs
+**This tool gives them data-driven answers.**
 
-## Methodology
-1. **Data Collection:** 8 years of NBS food price data
-2. **Feature Engineering:** Nigerian seasonal patterns, price change analysis
-3. **Modeling:** Random Forest vs Linear Regression comparison
-4. **Deployment:** 3-day battle with Python 3.13 compatibility
-5. **Validation:** Expert reviews from data scientists
+## 📊 What Makes It Unique
+- ✅ **FX-aware predictions** (₦ impact of exchange rates)
+- ✅ **Seasonal context** (Festive +₦2,714, Harvest -₦708)
+- ✅ **"What-If" simulator** (test scenarios before buying)
+- ✅ **Sensitivity chart** (see risk at a glance)
+- ✅ **Insights in Nigerian Naira** (not abstract numbers)
 
-## Key Results
-- **Best Model:** Random Forest Regressor
-- **Performance:** MAE = 37.88 units, R² = 0.9848
-- **Key Insight:** `price_change` accounted for **94%** of predictive power
-- **Business Impact:** Monthly price movement is the strongest signal for SME inventory planning
+## 🛠️ Methodology
+1. **Data:** 2023-2024 NBS + 2025-2026 FX-extended projections
+2. **Features:** Price momentum, FX changes, seasons, shocks
+3. **Model:** Linear Regression (transparent, not black box)
+4. **Deployment:** Streamlit Cloud (after 3 weeks of debugging 😅)
 
-## Tech Stack
-- **Language:** Python 3.13
-- **Libraries:** Streamlit, Scikit-learn, Pandas, NumPy, Joblib
-- **Model:** Random Forest Regressor (100 trees)
+## 📈 Key Drivers (₦ Impact)
+| Factor | Impact |
+|--------|--------|
+| 🎉 Festive Season | **+₦2,714** |
+| ⚡ Shock Month | **+₦984** |
+| 📈 Price Momentum | **+₦819 per 1%** |
+| 💰 Inflation | **+₦808 per 1%** |
+| 🌾 Harvest Season | **-₦708** |
+
+## 🚀 Features
+- 📊 **FX Scenario Simulator** — slide to see price impact
+- 📈 **Sensitivity Chart** — visualize risk instantly
+- ⚡ **Quick Scenarios** — one-click "what if" tests
+- 🔑 **Key Insights** — clear, actionable advice
+- 📋 **Full Transparency** — see exactly how decisions are made
+
+## 💻 Tech Stack
+- **Language:** Python 3.12
+- **Framework:** Streamlit
+- **Model:** Scikit-learn LinearRegression
+- **Data:** Pandas, NumPy
 - **Deployment:** Streamlit Cloud
-- **Validation:** MAE, R², Feature Importance Analysis
 
-## Actual Project Structure
+## 📁 Project Structure
+```
+nbs-sme-inventory-optimizer/
+├── app.py                    # Main Streamlit app
+├── random_forest_model.joblib # Trained Linear Regression model
+├── requirements.txt          # Dependencies
+├── case_study.md             # Full 4-week journey
+├── train_model.py             # Training script
+├── data_v2/                   # Data folder
+└── README.md                  # This file
+```
 
-nbs-sme-inventory-optimizer
-
-app.py                    # Streamlit application (LIVE!)
-
-requirements.txt          # Dependencies for Python 3.13
-
-random_forest_model.joblib # Trained model file
-
-01_2026_NG_SME_Inventory_Optimizer_NBS_Data.ipynb  # Complete analysis
-
-README.md                 # This file
-
-## How to Run Locally
-# Clone repository
+## 🚀 Run Locally
+```
 git clone https://github.com/Mygift-jpg/nbs-sme-inventory-optimizer.git
-
-# Install dependencies
+cd nbs-sme-inventory-optimizer
 pip install -r requirements.txt
-
-# Run the app
 streamlit run app.py
+```
 
-# Community & Acknowledgments
+## 🙏 Acknowledgments
+- **God's faithfulness** through every error message
+- **Community support** from #PROOF2026
+- **NBS Nigeria** for the foundational data
+- **Everyone who didn't let me quit**
 
-This project survived deployment thanks to:
+## 👩‍💻 Author
+**Blessing Okagbare**  
+Data Practitioner | Founder, LB EdTech Solutions  
+Building in Public • 🇳🇬 • #PROOF2026
 
-· Divine help through 3 days of Python version conflicts
-· Community support from fellow data practitioners
-· Expert validation from industry professionals
-· God's faithfulness in every technical detail
-
-Special thanks to everyone who engaged with the #BuildInPublic journey!
-
-# About the Author
-
-Blessing Okagbare – Data Practitioner & Founder, LB EdTech Solutions
-
-# This project serves as a real-world case study for the LB EdTech Data Analytics Bootcamp, demonstrating how Nigerian data can solve Nigerian business problems while documenting the REAL journey of deployment struggles and victories.
-
-# License
-
+## 📄 License
 MIT License. Data from NBS Nigeria. Educational/portfolio use.
 
-
-From January vision to January proof – documenting God's faithfulness in code. 🇳🇬
+**From January vision to February victory — documenting every struggle and breakthrough.** 🇳🇬
+```
